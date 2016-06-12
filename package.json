@@ -1,6 +1,6 @@
 {
   "name": "ember-oil-pastels",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Jamie's oil pastels in SCSS as an Ember addon",
   "directories": {
     "doc": "doc",
