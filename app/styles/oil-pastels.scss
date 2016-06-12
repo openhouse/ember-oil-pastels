@@ -1,0 +1,11 @@
+@import 'jamie-colors.scss';
+@each $name, $hex in $oil-pastels {
+  .pastel-#{$name} {
+    .pastel-text, &.pastel-text {
+      color: $hex;
+    }
+    .pastel-bg, &.pastel-bg {
+      background-color: $hex;
+    }
+  }
+}
