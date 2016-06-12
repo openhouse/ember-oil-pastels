@@ -1,3 +1,21 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Ember Oil Pastels</h2>
+
+<h3>CSS Classes</h3>
+<h5>.pastel-&lt;color-slug&gt; .pastel-background</h5>
+<h5>.pastel-&lt;color-slug&gt; .pastel-border</h5>
+<h5>.pastel-&lt;color-slug&gt; .pastel-text</h5>
+
+<h3>Colors</h3>
+{{#each pastel.colors as |color|}}
+  <div class="color-chip pastel-{{color.slug}} pastel-border pastel-bg">
+    <h3 class="pastel-text">{{color.slug}}</h3>
+    <div class="bottom ">
+      {{color.slug}}<br/>
+      <small>{{color.name}}</small><br/>
+      <span class="pastel-text">{{color.hex}}</span>
+    </div>
+  </div>
+{{/each}}
+
 
 {{outlet}}
